@@ -17,7 +17,7 @@ const App = () => {
         'X-RapidAPI-Host': process.env.REACT_APP_RAPID_API_KEY
       }
     }
-
+    
     axios.request(options).then(function (response) {
       console.log(response.data);
       setWords(response.data)
